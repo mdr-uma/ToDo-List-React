@@ -9,6 +9,32 @@ class App extends React.Component {
       key: ""
     }
   }
+
+handleInput = event => {
+  this.setState({
+    currentItem: {
+      text: event.target.value,
+      key: Date.now()
+    }
+  })
+}
+
+addItem = event => {
+  event.preventDefault()
+
+  const newItem = this.state.currentItem
+  if(newItem.text !== "") {
+    const newItems = [...this.state.items, newItem]
+    this.setState({
+      items: newItems,
+      currentItem: {
+        text: "",
+        key: ""
+      }
+    })
+  }
+}
+
   render(){
     return(
       <div className="container">
