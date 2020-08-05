@@ -2,6 +2,13 @@ import React from 'react';
 import './App.css'
 
 class App extends React.Component {
+  state = {
+    items: [],
+    currentItem: {
+      text: "",
+      key: ""
+    }
+  }
   render(){
     return(
       <div className="container">
