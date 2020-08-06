@@ -46,6 +46,7 @@ h2{
   cursor: pointer;
   font-weight: bolder;
   color: white;
+  outline: none;
 }
 
 /***************** ListItems component *********************/
@@ -74,5 +75,16 @@ h2{
 .faicons{
   margin: 0 5px;
   font-size: 15px;
+}
+
+.list p input{
+  background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.list p input:focus{
+  outline: none;
 }
 
