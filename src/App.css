@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   background-color: rgb(252, 229, 229);
 }
 
@@ -8,6 +7,7 @@ body {
   min-height: 500px;
   width: 400px;
   margin: 40px auto;
+  padding: 5px;
 }
 
 #to-do-form input{
@@ -19,7 +19,7 @@ body {
   margin: 20px;
   font-size: 18px;
   border-radius: 10px;
-  color: white;
+  color: rgb(5, 138, 199);
 }
 
 h2{
@@ -27,6 +27,13 @@ h2{
   padding-top: 20px;
   color: aliceblue;
   letter-spacing: 10px;
+  cursor: pointer;
+}
+
+h2:hover{
+  color: rgb(144, 248, 196); 
+  transition-duration: 1s;
+  transform: scale(1.35); 
 }
 
 #to-do-form input::placeholder{
@@ -47,12 +54,16 @@ h2{
   font-weight: bolder;
   color: white;
   outline: none;
+  cursor: pointer;
+}
+
+#to-do-form button:hover{
+  background-color: rgb(5, 179, 179);
 }
 
 /***************** ListItems component *********************/
 
 .list{
-  color: white;
   width: 300px;
   background-color: rgba(207, 15, 133, 0.856);
   height: 50px;
@@ -60,10 +71,15 @@ h2{
   border-radius: 5px;
 }
 
+.list:hover{
+  background-color: rgb(245, 80, 102);
+}
+
 .list p{
   padding: 10px;
   font-size: large;
   position: relative;
+  color: rgb(252, 248, 248);
 }
 
 .list p span{
@@ -80,7 +96,7 @@ h2{
 .list p input{
   background-color: transparent;
   border: 0;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
 
