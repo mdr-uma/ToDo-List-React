@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css'
+import ListItems from './components/ListItems'
 
 class App extends React.Component {
   state = {
@@ -41,10 +42,11 @@ addItem = event => {
         <header>
           <h2>ToDo List</h2>
           <form id="to-do-form" onSubmit={this.addItem}>
-            <input type="text" placeholder="Enter Text" value={this.state.currentItem.text} onChange={this.handleInput}/>
+            <input type="text" placeholder="Enter Task" value={this.state.currentItem.text} onChange={this.handleInput}/>
             <button type="submit">Add Item</button>
           </form>
         </header>
+        <ListItems items={this.state.items}/>
       </div>
     )
   }
