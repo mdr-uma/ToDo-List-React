@@ -62,5 +62,17 @@ h2{
 .list p{
   padding: 10px;
   font-size: large;
+  position: relative;
+}
+
+.list p span{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.faicons{
+  margin: 0 5px;
+  font-size: 15px;
 }
 
