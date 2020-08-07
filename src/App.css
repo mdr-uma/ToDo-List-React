@@ -133,11 +133,14 @@ h2:hover{
   color: antiquewhite;
   padding: 10px;
   margin: 5px;
-  width: 142px;
+  width: 158px;
   border-radius: 8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .App-clock:hover{
   background-color: firebrick;
 }
+
+
 
