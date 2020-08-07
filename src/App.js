@@ -64,9 +64,10 @@ deleteItem = key => {
   render(){
     return(
       <div className="container">
+        <Time />
         <header>
-          <Time />
           <h2>ToDo List</h2>
+          <hr/><br/>
           <form id="to-do-form" onSubmit={this.addItem}>
             <input type="text" placeholder="Enter Task" value={this.state.currentItem.text} onChange={this.handleInput}/>
             <button type="submit">Add Item</button>
