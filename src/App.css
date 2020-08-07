@@ -82,7 +82,7 @@ h2:hover{
 /***************** ListItems component *********************/
 
 .list{
-  width: 300px;
+  width: 360px;
   background-color: rgba(141, 132, 6, 0.945);
   height: 50px;
   margin: 20px auto;
@@ -116,6 +116,7 @@ h2:hover{
   border: 0;
   color: rgb(255, 255, 255);
   font-size: 18px;
+  width: 300px;
 }
 
 .list p input:focus{
