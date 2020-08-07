@@ -1,5 +1,6 @@
 import React from 'react';
 import ListItems from './components/ListItems'
+import Time from './components/Time'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faTrash} from '@fortawesome/free-solid-svg-icons'
 
@@ -64,6 +65,7 @@ deleteItem = key => {
     return(
       <div className="container">
         <header>
+          <Time />
           <h2>ToDo List</h2>
           <form id="to-do-form" onSubmit={this.addItem}>
             <input type="text" placeholder="Enter Task" value={this.state.currentItem.text} onChange={this.handleInput}/>
