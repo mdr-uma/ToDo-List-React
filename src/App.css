@@ -1,6 +1,5 @@
 body{
   display: block;
-  /* position: relative; */
 }
 
 body::after {
@@ -24,6 +23,8 @@ body::after {
   width: 500px;
   margin: 40px auto;
   padding: 5px;
+  max-height: 650px;
+  overflow-y: scroll;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.308);
   
 }
@@ -90,6 +91,7 @@ h2:hover{
 }
 
 .list:hover{
+  width: 350px;
   background-color: rgb(245, 80, 102);
 }
 
@@ -133,5 +135,9 @@ h2:hover{
   margin: 5px;
   width: 142px;
   border-radius: 8px;
+}
+
+.App-clock:hover{
+  background-color: firebrick;
 }
 
