@@ -1,13 +1,31 @@
-body {
-  background-color: rgb(252, 229, 229);
+body{
+  display: block;
+  /* position: relative; */
+}
+
+body::after {
+  content: "";
+  /* background-color: rgb(252, 229, 229); */
+  background: url('https://img.freepik.com/free-photo/contemporary-workspace-with-supplies-yellow-background_23-2147979156.jpg?size=626&ext=jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .container{
-  background-color: rgba(241, 36, 149, 0.589);
-  min-height: 500px;
-  width: 400px;
+  background-color: rgba(236, 195, 13, 0.938);
+  min-height: 650px;
+  width: 500px;
   margin: 40px auto;
   padding: 5px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.308);
+  
 }
 
 #to-do-form input{
@@ -16,7 +34,7 @@ body {
   width: 200px;
   height: 50px;
   padding: 0 20px;
-  margin: 20px;
+  margin: 0px 20px 20px 80px;
   font-size: 18px;
   border-radius: 10px;
   color: rgb(5, 138, 199);
@@ -24,8 +42,8 @@ body {
 
 h2{
   text-align: center;
-  padding-top: 20px;
-  color: aliceblue;
+  padding-top: 8px;
+  color: rgb(107, 6, 74);
   letter-spacing: 10px;
   cursor: pointer;
 }
@@ -49,7 +67,7 @@ h2:hover{
   width: 80px;
   border: 0;
   border-radius: 5px;
-  background-color: yellowgreen;
+  background-color: rgb(144, 209, 15);
   cursor: pointer;
   font-weight: bolder;
   color: white;
@@ -65,7 +83,7 @@ h2:hover{
 
 .list{
   width: 300px;
-  background-color: rgba(207, 15, 133, 0.856);
+  background-color: rgba(141, 132, 6, 0.945);
   height: 50px;
   margin: 20px auto;
   border-radius: 5px;
@@ -102,5 +120,17 @@ h2:hover{
 
 .list p input:focus{
   outline: none;
+}
+
+/***************** Time component *********************/
+.App-clock{
+  position: relative;
+  top: 50%;
+  background-color: rgba(47, 79, 79, 0.808);
+  color: antiquewhite;
+  padding: 10px;
+  margin: 5px;
+  width: 142px;
+  border-radius: 8px;
 }
 
